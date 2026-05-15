@@ -1,0 +1,17 @@
+[package]
+name = "use-signal-energy"
+description = "Primitive energy and power helpers for signal slices"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-signal-energy"
+keywords = ["signal", "energy", "power", "decibel"]
+categories = ["algorithms", "science"]
+
+[lints]
+workspace = true

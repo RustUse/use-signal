@@ -1,0 +1,27 @@
+[package]
+name = "use-signal"
+description = "Composable facade crate for RustUse signal-processing primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-signal"
+keywords = ["signal", "window", "normalize", "frequency", "filter"]
+categories = ["algorithms", "science"]
+
+[dependencies]
+use-amplitude.workspace = true
+use-frequency.workspace = true
+use-sample.workspace = true
+use-signal-energy.workspace = true
+use-signal-normalize.workspace = true
+use-signal-window.workspace = true
+use-simple-filter.workspace = true
+use-zero-crossing.workspace = true
+
+[lints]
+workspace = true

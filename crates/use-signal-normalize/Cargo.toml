@@ -1,0 +1,17 @@
+[package]
+name = "use-signal-normalize"
+description = "Primitive normalization helpers for signal slices"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-signal-normalize"
+keywords = ["signal", "normalize", "center", "dc-offset"]
+categories = ["algorithms", "science"]
+
+[lints]
+workspace = true

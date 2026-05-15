@@ -1,0 +1,17 @@
+[package]
+name = "use-zero-crossing"
+description = "Primitive zero-crossing helpers for signal slices"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-zero-crossing"
+keywords = ["signal", "zero-crossing", "rate", "waveform"]
+categories = ["algorithms", "science"]
+
+[lints]
+workspace = true
