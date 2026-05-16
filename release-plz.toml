@@ -1,0 +1,81 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-sample"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-amplitude"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-frequency"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-signal-window"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-signal-normalize"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-signal-energy"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-zero-crossing"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-simple-filter"
+release = true
+version_group = "rustuse-signal"
+
+[[package]]
+name = "use-signal"
+release = true
+version_group = "rustuse-signal"
+changelog_update = true
+changelog_path = "./CHANGELOG.md"
+changelog_include = [
+  "use-sample",
+  "use-amplitude",
+  "use-frequency",
+  "use-signal-window",
+  "use-signal-normalize",
+  "use-signal-energy",
+  "use-zero-crossing",
+  "use-simple-filter",
+]
+
+[changelog]
+header = """# Changelog
+
+## Unreleased
+"""
+protect_breaking_commits = true
+sort_commits = "oldest"
+commit_parsers = [
+  { message = "^feat(?:\\([^)]+\\))?!?: .+", group = "Added" },
+  { message = "^fix(?:\\([^)]+\\))?!?: .+", group = "Fixed" },
+  { message = "^security(?:\\([^)]+\\))?!?: .+", group = "Security" },
+  { message = "^(?:refactor|perf|change)(?:\\([^)]+\\))?!?: .+", group = "Changed" },
+  { message = "^docs(?:\\([^)]+\\))?!?: .+", group = "Documentation" },
+  { message = "^(?:build|ci|chore|deps|test)(?:\\([^)]+\\))?!?: .+", group = "Tooling" },
+  { footer = "^changelog: ?ignore$", skip = true },
+  { message = "^.*", group = "Changed" },
+]
