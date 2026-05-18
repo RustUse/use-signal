@@ -37,8 +37,8 @@ pub use use_zero_crossing::*;
 #[cfg(test)]
 mod tests {
     use super::{
-        apply_window, moving_average_filter, normalize_peak, peak_amplitude, signal_energy,
-        zero_crossing_count, Frequency, Sample, WindowKind,
+        Frequency, Sample, WindowKind, apply_window, moving_average_filter, normalize_peak,
+        peak_amplitude, signal_energy, zero_crossing_count,
     };
 
     #[test]

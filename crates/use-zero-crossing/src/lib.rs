@@ -42,14 +42,16 @@ pub fn zero_crossing_count(samples: &[f64]) -> usize {
     for sample in samples.iter().copied() {
         match non_zero_sign(sample) {
             Some(sign) => {
-                if let Some(previous) = previous_sign && previous != sign {
+                if let Some(previous) = previous_sign
+                    && previous != sign
+                {
                     count += 1;
                 }
 
                 previous_sign = Some(sign);
-            }
+            },
             None if !sample.is_finite() => previous_sign = None,
-            None => {}
+            None => {},
         }
     }
 

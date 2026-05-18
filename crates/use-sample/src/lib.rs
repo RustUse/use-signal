@@ -74,7 +74,7 @@ pub fn duration_seconds(sample_count: usize, sample_rate_hz: f64) -> Result<f64,
 
 #[cfg(test)]
 mod tests {
-    use super::{duration_seconds, sample_count, validate_samples, Sample, SampleError};
+    use super::{Sample, SampleError, duration_seconds, sample_count, validate_samples};
 
     #[test]
     fn constructs_sample_and_reports_properties() {

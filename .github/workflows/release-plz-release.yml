@@ -1,6 +1,6 @@
 name: Release Publish Automation
 
-on:
+"on":
     push:
         branches:
             - main
@@ -27,7 +27,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             PUBLISHED_CRATES: >-
-                use-sample use-amplitude use-frequency use-signal-window use-signal-normalize use-signal-energy use-zero-crossing use-simple-filter use-signal
+              use-sample use-amplitude use-frequency use-signal-window use-signal-normalize use-signal-energy use-zero-crossing use-simple-filter use-signal
         steps:
             - name: Check out repository
               uses: actions/checkout@v4

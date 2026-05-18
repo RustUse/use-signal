@@ -36,3 +36,27 @@ use-zero-crossing = { version = "0.0.1", path = "crates/use-zero-crossing" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-sample",
+    "use-amplitude",
+    "use-frequency",
+    "use-signal-window",
+    "use-signal-normalize",
+    "use-signal-energy",
+    "use-zero-crossing",
+    "use-simple-filter",
+    "use-signal",
+]
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+expect_used = "warn"
+multiple_crate_versions = "allow"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+todo = "deny"
+unimplemented = "deny"
+unwrap_used = "warn"
