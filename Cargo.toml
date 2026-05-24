@@ -21,18 +21,18 @@ publish = false
 readme = "README.md"
 repository = "https://github.com/RustUse/use-signal"
 rust-version = "1.95.0"
-version = "0.0.1"
+version = "0.0.2"
 
 [workspace.dependencies]
-use-amplitude = { version = "0.0.1", path = "crates/use-amplitude" }
-use-frequency = { version = "0.0.1", path = "crates/use-frequency" }
-use-sample = { version = "0.0.1", path = "crates/use-sample" }
-use-signal = { version = "0.0.1", path = "crates/use-signal" }
-use-signal-energy = { version = "0.0.1", path = "crates/use-signal-energy" }
-use-signal-normalize = { version = "0.0.1", path = "crates/use-signal-normalize" }
-use-signal-window = { version = "0.0.1", path = "crates/use-signal-window" }
-use-simple-filter = { version = "0.0.1", path = "crates/use-simple-filter" }
-use-zero-crossing = { version = "0.0.1", path = "crates/use-zero-crossing" }
+use-amplitude = { version = "0.0.2", path = "crates/use-amplitude" }
+use-frequency = { version = "0.0.2", path = "crates/use-frequency" }
+use-sample = { version = "0.0.2", path = "crates/use-sample" }
+use-signal = { version = "0.0.2", path = "crates/use-signal" }
+use-signal-energy = { version = "0.0.2", path = "crates/use-signal-energy" }
+use-signal-normalize = { version = "0.0.2", path = "crates/use-signal-normalize" }
+use-signal-window = { version = "0.0.2", path = "crates/use-signal-window" }
+use-simple-filter = { version = "0.0.2", path = "crates/use-simple-filter" }
+use-zero-crossing = { version = "0.0.2", path = "crates/use-zero-crossing" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
