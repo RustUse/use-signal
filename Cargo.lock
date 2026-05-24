@@ -4,19 +4,19 @@ version = 4
 
 [[package]]
 name = "use-amplitude"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-frequency"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-sample"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-signal"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-amplitude",
  "use-frequency",
@@ -30,20 +30,20 @@ dependencies = [
 
 [[package]]
 name = "use-signal-energy"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-signal-normalize"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-signal-window"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-simple-filter"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-zero-crossing"
-version = "0.0.1"
+version = "0.0.2"
